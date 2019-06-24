@@ -1,5 +1,3 @@
-import itertools
-
 class BoxState():
     EMPTY = ' '
     PLAYER_X = 'X'
