@@ -49,7 +49,7 @@ class TableLearning(GenericLearning):
     def printValues(self):
         print(self.values)
         print('Total number of states: %s' % (len(self.values)))
-        print('Total number of knowledgeable states: %s' % (len(filter(lambda x: x!=0.5, self.values.values()))))
+        print('Total number of knowledgeable states: %s' % (len(list(filter(lambda x: x!=0, self.values.values())))))
 
     def saveLearning(self, filename):
         json.dump(self.values, open(filename,'w'))

@@ -3,7 +3,7 @@ from board import TTTBoardDecision, BoxState, TTTBoard
 from learning import NNLearning, TableLearning
 from random import randint
 learningModel = TableLearning(TTTBoardDecision)
-learningModel.loadLearning("temp_learning.json")
+learningModel.loadLearning("FinalTableModel.json")
 player1 = RLTTTPlayer(learningModel)
 player2 = RealTTTPlayer()
 board = TTTBoard()
